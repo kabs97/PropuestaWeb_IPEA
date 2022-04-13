@@ -1,0 +1,667 @@
+    * {
+        font-size: 10px;
+        font-family: 'Roboto', sans-serif;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .nav {
+        position: relative;
+        border-bottom: 1px solid #041ABB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px 0 0
+    }
+    
+    .nav-logo img {
+        position: relative;
+        width: 80px;
+        padding: 0 10px 10px 10px;
+    }
+    
+    .nav-menu {
+        position: relative;
+        display: flex;
+    }
+    
+    .nav-link {
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    .nav-item a {
+        position: relative;
+        color: #041ABB;
+    }
+    
+    .nav-item a :hover {
+        color: rgb(163, 162, 162);
+    }
+    
+    .hamburguesa {
+        position: relative;
+        display: none;
+    }
+    
+    .bar {
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #041ABB;
+    }
+    
+    .banner-inicial img {
+        width: 100%;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    div#slider {
+        overflow: hidden;
+    }
+    
+    div#slider figure img {
+        width: 20%;
+        float: left;
+    }
+    
+    div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
+    }
+    
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+        20% {
+            left: 0%;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+    
+    .datos .fas {
+        color: var(--azul-transparencia);
+        font-size: 5rem;
+        margin-bottom: 15px;
+    }
+    
+    .datos h1,
+    .mapa h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--azul);
+    }
+    
+    .mapa h2,
+    label {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--gris);
+        margin-bottom: 10px;
+    }
+    
+    label {
+        padding: 12px 0 0 0;
+    }
+    
+    .texto {
+        margin: auto;
+        width: 30%;
+    }
+    
+    .texto p,
+    .datos p,
+    .oferta p {
+        padding: 13px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--gris);
+        text-align: justify;
+    }
+    
+    .oferta {
+        margin: 20px 0 0 0;
+        padding: 15px;
+    }
+    
+    .oferta img {
+        width: 90%;
+    }
+    
+    .oferta h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--azul);
+    }
+    
+    #ingles,
+    #admin,
+    #conta,
+    #secre,
+    #rh,
+    #banco,
+    #industrial {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ingles .info,
+    #admin .info,
+    #conta .info,
+    #secre .info,
+    #rh .info,
+    #banco .info,
+    #industrial .info {
+        align-self: center;
+        margin-top: 5%;
+        width: 50%;
+    }
+    
+    .oferta button {
+        background-color: var(--amarillo);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    .oferta button:hover {
+        background-color: var(--azul-transparencia);
+    }
+    
+    .oferta a {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    .info .fas {
+        font-size: 1.6rem;
+        color: #fff;
+        margin-right: 5px;
+    }
+    
+    .oferta a:hover {
+        color: #fff;
+    }
+    
+    .titulo {
+        width: 100;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: var(--azul-transparencia);
+    }
+    
+    .titulo h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .galeria {
+        border-top: var(--azul) solid 1px;
+    }
+    
+    .galeria img {
+        margin: 60px 30px 100px 30px;
+    }
+    
+    .galeria img:hover {
+        box-shadow: 0 0 5px rgba(1, 0, 51, 0.2);
+    }
+    
+    .galeria h1 {
+        padding: 40px 30px 0px 30px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--azul);
+    }
+    
+    .titulo-contacto {
+        width: 100;
+        padding: 20px;
+        background-color: var(--azul);
+        border-bottom: #fff 30px solid;
+    }
+    
+    .titulo-contacto h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .mapa {
+        padding-bottom: 80px;
+    }
+    
+    .mapa .col-md-6 {
+        padding: 20px;
+    }
+    
+    .mapa i {
+        color: var(--azul-transparencia);
+        font-size: 1.6rem;
+        margin-right: 7px;
+    }
+    
+    #correo,
+    .tele2 {
+        margin-left: 20px;
+    }
+    
+    .telefonos {
+        padding: 12px;
+        border: 1px solid var(--azul-transparencia);
+        border-radius: 5px;
+        margin-top: 10px;
+        color: var(--gris);
+    }
+    
+    .telefonos p {
+        font-size: 1.6rem;
+    }
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    
+    .enviar {
+        display: flex;
+        justify-content: center;
+    }
+    
+    input[type=submit] {
+        margin-top: 15px;
+        width: 98%;
+        background-color: var(--amarillo);
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    
+    input[type=submit]:hover {
+        background-color: var(--azul-transparencia);
+    }
+    
+    .container {
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .mapa .redes .fab {
+        color: var(--amarillo);
+        font-size: 4rem;
+        margin-top: 15px;
+    }
+    
+    .mapa .redes .fab:hover {
+        color: var(--azul-transparencia);
+    }
+    
+    footer {
+        border-top: var(--azul) solid 1px;
+        color: var(--azul);
+    }
+    
+    footer h1 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    
+    footer p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 80%;
+        overflow: auto;
+        background-color: var(--azul-transparencia);
+    }
+    
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+    
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .caption-container {
+        display: flex;
+        text-align: center;
+        background-color: var(--azul-transparencia);
+        padding: 2px 16px;
+        color: white;
+    }
+    
+    img.demo {
+        opacity: 0.6;
+        margin: 0;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+    
+    .hover-shadow:hover {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: var(--azul);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    
+    #myBtn:hover {
+        background-color: var(--azul-transparencia);
+    }
+    
+    @media only screen and (max-width: 1400px) {
+        #admin,
+        #conta,
+        #secre,
+        #rh,
+        #banco,
+        #industrial {
+            height: 400px;
+        }
+        #secre .info {
+            margin-top: 12%;
+        }
+        #ingles .info {
+            margin-top: 12%;
+        }
+        .telefonos p {
+            font-size: 1.3rem;
+        }
+        .info .fas {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-right: 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        #ingles,
+        #admin,
+        #conta,
+        #secre,
+        #banco,
+        #industrial {
+            height: 420px;
+        }
+        #ingles .info {
+            margin-top: 55px;
+        }
+        #conta .info {
+            margin-top: 30px;
+        }
+        #admin .info {
+            margin-top: 18%;
+        }
+        #secre .info {
+            margin-top: 13%;
+        }
+        #rh .info {
+            margin-top: 13%;
+        }
+        .oferta a {
+            font-size: 1.4rem;
+        }
+        .telefonos p {
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 992px) {
+        #ingles .info {
+            margin-top: 26%;
+        }
+        #conta .info {
+            margin-top: 26%;
+        }
+        #secre .info,
+        #rh .info {
+            margin-top: 26%;
+        }
+        #admin .info,
+        #banco .info,
+        #industrial .info {
+            margin-top: 5%;
+        }
+        .oferta a {
+            font-size: 0.9rem;
+        }
+        .info .fas {
+            font-size: 1rem;
+            color: #fff;
+            margin-right: 5px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .nav-menu {
+            position: absolute;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+        .nav-menu.active {
+            left: 0;
+        }
+        .nav-item {
+            margin: 1.1rem 0;
+        }
+        .hamburguesa {
+            display: block;
+            cursor: pointer;
+        }
+        .hamburguesa.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburguesa.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburguesa.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .datos .fas {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+        .datos h1,
+        .mapa h1,
+        .oferta h1 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .datos p,
+        .oferta p,
+        .texto p {
+            padding: 8px;
+            font-size: 1.2rem;
+        }
+        #ingles,
+        #admin,
+        #conta,
+        #secre,
+        #rh,
+        #banco,
+        #industrial {
+            height: 300px;
+        }
+        #secre .info {
+            margin-top: 6%;
+        }
+        #banco .info {
+            margin-top: 1%;
+        }
+        #admin .info,
+        #conta .info,
+        #industrial .info,
+        #rh .info {
+            margin-top: 4%;
+            margin-bottom: 15px;
+        }
+        #ingles .info {
+            margin-top: 15%;
+        }
+        @media only screen and (max-width: 575px) {
+            #ingles,
+            #admin,
+            #conta,
+            #secre,
+            #rh,
+            #banco,
+            #industrial {
+                height: 350px;
+            }
+            #ingles .info,
+            #admin .info,
+            #conta .info,
+            #secre .info,
+            #rh .info,
+            #banco .info,
+            #industrial .info {
+                margin: 3%;
+                width: 40%;
+            }
+            .oferta a {
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
